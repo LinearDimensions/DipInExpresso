@@ -1,8 +1,11 @@
 from turtle import update
 from telegram.ext import *
-from os import API_KEY
+from dotenv import load_dotenv
+import os
 import NLP
 
+def configure():
+    load_dotenv()
 
 def sample_responses(input_text) :
     user_message = str(input_text).lower()
@@ -30,7 +33,8 @@ def error(update, context):
     print("Update {} caused error {}".format(update, context.error))
 
 def main():
-    updater = Updater(API_KEY, use_context=True)
+    configure()
+    updater = Updater(os.getenv('API_KEY'), use_context=True)
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start",start_command))
