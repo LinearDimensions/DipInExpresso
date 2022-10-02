@@ -14,4 +14,5 @@ https://web.telegram.org/z/#5497795046
 Text Sentiment https://www.kaggle.com/datasets/kazanova/sentiment140
 Text Category https://www.kaggle.com/datasets/rmisra/news-category-dataset
 
-Deep learning Methods
+## Deep learning Methods
+Tensorflow and Sklearn
