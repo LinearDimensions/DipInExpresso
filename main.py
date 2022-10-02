@@ -1,8 +1,8 @@
 from turtle import update
 from telegram.ext import *
 from dotenv import load_dotenv
+from response import getResponse
 import os
-import NLP
 
 def configure():
     load_dotenv()
@@ -22,12 +22,7 @@ def help_command(update, context):
 
 def handle_messages(update, context):
     text = str(update.message.text).lower()
-    output = ''
-    ##for sentiment, category in NLP.predict(text):
-    output += ('{}: \t['.format('Gayness') + '='*10 + '-'*(10-10) + '] {}0%'.format(10) + '\n')
-    output += ('{}: \t['.format('Sexiness') + '='*10 + '-'*(10-10) + '] {}0%'.format(10) + '\n')
-    output += ('{}: \t8'.format('Cock size') + '='*10 + '-'*(10-10) + 'D  <3' '\n')
-    update.message.reply_text(output)
+    update.message.reply_text(getResponse(text))
 
 def error(update, context):
     print("Update {} caused error {}".format(update, context.error))

@@ -21,14 +21,3 @@ def getResponse(input):
             output += '\n'
 
     return output
-
-
-
-
-    output = ''
-    ##
-    ##output += ('{}: \t['.format() + '='*10 + '-'*(10-10) + '] {}0%'.format(10) + '\n')
-    output += ('{}: \t['.format('Gayness') + '='*10 + '-'*(10-10) + '] {}0%'.format(10) + '\n')
-    output += ('{}: \t['.format('Sexiness') + '='*10 + '-'*(10-10) + '] {}0%'.format(10) + '\n')
-    output += ('{}: \t8'.format('Cock size') + '='*10 + '-'*(10-10) + 'D  <3' '\n')
-    update.message.reply_text(output)

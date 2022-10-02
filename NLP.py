@@ -10,11 +10,7 @@ import string
 model1 = tf.keras.models.load_model('./model_training/model1.h5')
 model2 = tf.keras.models.load_model('./model_training/model2.h5')
 token = pickle.load(open('model_training/token.pickle','rb'))
-'''
-def predict(x):
-    x=token.texts_to_sequences([x])
-    x=pad_sequences(x,maxlen=200,padding='pre')
-    return loaded_model.predict(x)>0.5'''
+
 
 def remove_stopwords(text):
     tokens = []
