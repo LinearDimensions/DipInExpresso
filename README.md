@@ -7,6 +7,11 @@ YouOnline helps to track your mental wellbeing through a telegram bot. By forwar
 - Track sentiments over time
 
 ## DEMO
-@youonline_bot
+@dip_in_expresso_bot
+https://web.telegram.org/z/#5497795046
+
+## Data Sources
+Text Sentiment https://www.kaggle.com/datasets/kazanova/sentiment140
+Text Category https://www.kaggle.com/datasets/rmisra/news-category-dataset
 
 Deep learning Methods
